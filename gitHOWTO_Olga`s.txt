@@ -1,0 +1,31 @@
+
+
+cd /media/work/WORK/PROJECTS
+git init
+
+
+КЛОНИРУЕМ РЕПОЗИТРАРИЙ
+git clone https://github.com/oolga77/education.git
+
+
+cd /media/work/WORK/PROJECTS
+cd /media/work/WORK/PROJECTS/education
+
+Задаем свое имя командой:
+git config --global user.name "oolga77"
+
+Задаем свой e-mail:
+git config --global user.email "oemi.ua@gmail.com"
+
+
+
+
+
+
+ЗАКОМИТИТЬ ИЗМЕНЕНИЯ:
+cd /media/work/WORK/PROJECTS/education
+git rm -r -f --cached .
+git add .
+
+git commit -m '201809____ commit'
+git push -u origin master

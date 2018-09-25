@@ -1,0 +1,200 @@
+*{
+	box-sizing: border-box;		/*одинаковая ширина для всех тегов*/
+
+}
+main::after{		/*псевдокласс,  позволяет добавить в конец*/
+clear: both;
+display: block;
+content: "";
+
+}
+[class*="col-"]{	/*читается это так - для всех классов имя которых начинается на 'col-'*/
+	float: left;
+	padding: 15px;
+
+}
+header{
+	background: #0CF5ED;
+	color: #F6F911;
+	padding: 15px;
+}
+aside{
+	background: #35F16A;
+	color: #FA0C12;
+	padding: 15px;
+	font-size: 12px;
+}
+[class*='col-']{
+	width: 100%;
+}
+@media (min-width: 600px){
+.col-m-1{
+	width: 8.333333333333333%;
+	}
+	.col-m-2{
+	width: 16.66666666666667%;}
+	.col-m-3{
+	width: 24.9999999999%;}
+	.col-m-4{
+	width: 33.333333333333%;}
+	.col-m-5{
+	width: 41.66666666666665%;}
+	.col-m-6{
+	width: 49.9999999999998%;}
+	.col-m-7{
+	width: 58.33333333333331%;}
+	.col-m-8{
+	width: 66.66666666666664%;}
+	.col-m-9{
+	width: 74.99999999999997%;}
+	.col-m-10{
+	width: 83.33333333333333%;}
+	.col-m-11{
+	width: 91.6666666666663%;}
+	.col-m-12{
+	width: 100%;}
+}
+@media (min-width: 768px){
+	.col-1{
+	width: 8.333333333333333%;
+}
+	.col-2{
+	width: 16.66666666666667%;
+}
+	.col-3{
+	width: 24.9999999999%;
+}
+	.col-4{
+	width: 33.333333333333%;
+}
+	.col-5{
+	width: 41.66666666666665%;
+}
+	.col-6{
+	width: 49.9999999999998%;
+}
+	.col-7{
+	width: 58.33333333333331%;
+}
+	.col-8{
+	width: 66.66666666666664%;
+}
+	.col-9{
+	width: 74.99999999999997%;
+}
+	.col-10{
+	width: 83.33333333333333%;
+}
+	.col-11{
+	width: 91.6666666666663%;
+}
+	.col-12{
+	width: 100%;
+}
+}
+ul.g_menu{
+	list-style-type: none;		/*убрать маркеры маркированого списка*/
+	margin: 0;
+	padding: 0;
+	overflow: hidden;	
+	background: #F065E8;
+
+}
+ul.g_menu li{
+	float: left;		/*обтекание слева, чтобы столбец превратить в строку*/
+}
+ul.g_menu li a{
+	color: white;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 14px 16px;	/*p14-16*/
+}
+ul.g_menu .active{
+	background: black;
+}
+ul.g_menu li a:hover:not(.active){		/*hover - псевдокласс, определяющий поведение объекта, когда на него наводишь указатель*/
+	/*:not - не использовать объект у которого класс active;*/
+	background: #9CF80B;
+}
+.t1{
+font-family: verdana;		/*используемый шрифт*/
+font-size: 12px;		/*кегель-размер букв*/
+line-height: 18px;		/*интерлиньяж-интервал между строками*/
+text-indent: 35px;		/*красная строка, абзацный отступ*/
+border: 1px solid #000;		/*рамка: толщина стиль цвет;*/
+margin: 10px;		/*внешнее поле*/
+padding: 10px;		/*внутренний отступ*/
+
+}
+.t2{
+	font-family: Times New Roman;
+	font-size: 24px;
+	line-height: 36px;
+	text-indent: 35px;
+	border: 2px dashed #1837F4;
+	width: 80%;
+	margin: 10px auto;
+	padding: 15px;
+
+}
+.t3{
+	font-family: courier new;
+	font-size: 14px;
+	line-height: 20px;
+	text-indent: 35px;
+	width: 60%;
+	margin: 3px auto;
+	text-align: right;
+	padding: 5px;
+	border: 3px dotted #000;
+
+}
+.t4{
+	font-family: comic sans ms;
+	font-size: 13px;
+	line-height: 18px;
+	text-indent: 35px;
+	width: 70%;
+	margin: 3px auto;
+	text-align: left;
+	padding: 5px;
+	border: 3px double maroon;
+
+}
+@font-face {
+	font-family: 'Conv_Angelica';
+	src: url('../fonts/Angelica.eot');
+	src: local('☺'), url('../fonts/Angelica.woff') format('woff'), url('../fonts/Angelica.ttf') format('truetype'), url('../fonts/Angelica.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.t5{
+	font-family: 'Conv_Angelica';
+	font-size: 36px;
+	line-height: 46px;
+	text-indent: 35px;
+	width: 70%;
+	margin: 3px auto;
+	text-align: left;
+	padding: 5px;
+	border: 3px outset red;
+
+}
+.tt1, .tt2, .tt3, .tt4{
+font-family: Times New Roman;
+font-size: 19px;
+line-height: 26px;
+margin: 2%;
+border-bottom: 2px dashed black;
+padding-bottom: 12px;
+}
+.tt1{
+	text-decoration: overline;
+}
+.tt2{
+	text-decoration: underline;
+}
+.tt3{
+	text-decoration: line-through;
+}
