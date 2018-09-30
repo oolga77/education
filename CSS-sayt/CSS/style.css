@@ -1,0 +1,134 @@
+*{
+	box-sizing: border-box;
+}
+main::after{		/*псевдокласс,  позволяет добавить в конец*/
+clear: both;
+display: block;
+content: "";
+
+}
+[class*="col-"]{	/*читается это так - для всех классов имя которых начинается на 'col-'*/
+	float: left;
+	padding: 15px;}
+
+main{
+	clear: both;
+	display: block;
+}
+h1{
+	color: #1B207A; 
+	font-size: 24pt; 
+	font-family: Georgia;
+	font-weight: normal;
+}
+
+
+
+ul.menu1 .active{
+		background: #EEF144;
+}
+ul.menu1{
+	list-style-type: none;		
+	margin: 10px;
+	padding:10px;
+	overflow: hidden;	
+	background: #2CB5CE;
+}
+ul.menu1 li{
+	float: left;
+}
+ul.menu1 li a{
+	color: #1F1276;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	padding: 11px 12px;
+}
+[class*='col-']{
+	width: 100%;}
+
+@media (min-width: 800px){
+.col-m-1{
+	width: 8.333333333333333%;
+	}
+	.col-m-2{
+	width: 16.66666666666667%;}
+	.col-m-3{
+	width: 24.9999999999%;}
+	.col-m-4{
+	width: 33.333333333333%;}
+	.col-m-5{
+	width: 41.66666666666665%;}
+	.col-m-6{
+	width: 49.9999999999998%;}
+	.col-m-7{
+	width: 58.33333333333331%;}
+	.col-m-8{
+	width: 66.66666666666664%;}
+	.col-m-9{
+	width: 74.99999999999997%;}
+	.col-m-10{
+	width: 83.33333333333333%;}
+	.col-m-11{
+	width: 91.6666666666663%;}
+	.col-m-12{
+	width: 100%;}
+}
+@media (min-width: 768px){
+	.col-1{
+	width: 8.333333333333333%;
+}
+	.col-2{
+	width: 16.66666666666667%;
+}
+	.col-3{
+	width: 24.9999999999%;
+}
+	.col-4{
+	width: 33.333333333333%;
+}
+	.col-5{
+	width: 41.66666666666665%;
+}
+	.col-6{
+	width: 49.9999999999998%;
+}
+	.col-7{
+	width: 58.33333333333331%;
+}
+	.col-8{
+	width: 66.66666666666664%;
+}
+	.col-9{
+	width: 74.99999999999997%;
+}
+	.col-10{
+	width: 83.33333333333333%;
+}
+	.col-11{
+	width: 91.6666666666663%;
+}
+	.col-12{
+	width: 100%;
+}
+}
+
+.t1{
+	text-align: justify; 
+	font-size: 21px;
+	margin-left: 60px; 
+	margin-right: 10px; 
+	border-left: 1px solid #999; /* Параметры линии слева */
+	border-bottom: 1px solid #999; /* Параметры линии снизу */
+	padding-left: 10px; 
+	padding-bottom: 10px; 
+}
+.t2, .t3{
+	font-family: Times New Roman;
+	font-size: 22px;
+	line-height: 20px;
+	text-indent: 35px;
+	width: 90%;
+	margin: 10px auto;
+	padding: 15px;
+}
